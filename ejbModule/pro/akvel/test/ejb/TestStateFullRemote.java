@@ -6,7 +6,7 @@ import javax.ejb.Remote;
 public interface TestStateFullRemote {
 
 	
-	int getCounter();
+	String getCounters();
 	
 	
 }

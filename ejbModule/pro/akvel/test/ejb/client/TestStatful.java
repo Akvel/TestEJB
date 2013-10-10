@@ -29,10 +29,10 @@ public class TestStatful {
 		
 		 TestStateFullRemote foo = (TestStateFullRemote) new InitialContext(props).lookup("java:global/TestEJB/TestStateFull!pro.akvel.test.ejb.TestStateFullRemote");
 	
-		 System.out.println(System.currentTimeMillis() + " " + foo.getCounter());
+		 System.out.println(System.currentTimeMillis() + " " + foo.getCounters());
 		 
 		 TestStateFullRemote foo1 = (TestStateFullRemote) new InitialContext(props).lookup("java:global/TestEJB/TestStateFull!pro.akvel.test.ejb.TestStateFullRemote");
 		 
-		 System.out.println(System.currentTimeMillis() + " " + foo1.getCounter());
+		 System.out.println(System.currentTimeMillis() + " " + foo1.getCounters());
 	}
 }
